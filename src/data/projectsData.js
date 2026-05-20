@@ -15,7 +15,9 @@ const projectsData = [
     github:
       "https://github.com/Washimakhtar786/taskmaster-pro",
 
-    live: "#",
+    // ADD RENDER LINK HERE
+    live:
+      "https://taskmaster-pro-gd4d.onrender.com",
   },
 
   {
@@ -34,7 +36,9 @@ const projectsData = [
     github:
       "https://github.com/Washimakhtar786/design-system-kit",
 
-    live: "#",
+    // ADD RENDER LINK HERE
+    live:
+      "https://design-system-kit.onrender.com",
   },
 
   {
@@ -53,7 +57,9 @@ const projectsData = [
     github:
       "https://github.com/Washimakhtar786/tailwind-portfolio",
 
-    live: "#",
+    // ADD RENDER LINK HERE
+    live:
+      "https://tailwind-portfolio-qcuy.onrender.com",
   },
 
   {
@@ -72,7 +78,9 @@ const projectsData = [
     github:
       "https://github.com/Washimakhtar786/mini-blog",
 
-    live: "#",
+    // ADD RENDER LINK HERE
+    live:
+      "https://mini-blog-1x3q.onrender.com",
   },
 
   {
@@ -91,7 +99,9 @@ const projectsData = [
     github:
       "https://github.com/Washimakhtar786/admin-dashboard",
 
-    live: "#",
+    // ADD RENDER LINK HERE
+    live:
+      "https://admin-dashboard-egah.onrender.com",
   },
 
   {
@@ -110,7 +120,9 @@ const projectsData = [
     github:
       "https://github.com/Washimakhtar786/ecommerce-storefront",
 
-    live: "#",
+    // ADD RENDER LINK HERE
+    live:
+      "https://ecommerce-storefront-hc7w.onrender.com",
   },
 
   {
@@ -129,7 +141,9 @@ const projectsData = [
     github:
       "https://github.com/Washimakhtar786/WeatherDashBoard",
 
-    live: "#",
+    // ADD RENDER LINK HERE
+    live:
+      "https://weatherdashboard-30lw.onrender.com",
   },
 
   {
@@ -148,7 +162,9 @@ const projectsData = [
     github:
       "https://github.com/Washimakhtar786/ExpenseTracker",
 
-    live: "#",
+    // ADD RENDER LINK HERE
+    live:
+      "https://expensetracker-epk7.onrender.com",
   },
 
   {
@@ -167,7 +183,9 @@ const projectsData = [
     github:
       "https://github.com/Washimakhtar786/QuizApp",
 
-    live: "#",
+    // ADD RENDER LINK HERE
+    live:
+      "https://washimakhtar786.github.io/QuizApp/",
   },
 ];
 

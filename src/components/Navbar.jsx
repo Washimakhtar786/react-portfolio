@@ -1,52 +1,69 @@
 import { NavLink } from "react-router-dom";
 
 function Navbar() {
-
-  const navLinkStyles = ({ isActive }) =>
-    isActive
-      ? "text-blue-600 font-semibold"
-      : "text-gray-700 hover:text-blue-600 transition";
-
   return (
-    <header className="sticky top-0 z-50 border-b border-white/20 bg-white/60 backdrop-blur-xl">
-      
-      <nav className="container mx-auto px-4 py-4 flex justify-between items-center">
-        
-        <h1 className="text-2xl font-bold text-blue-600">
+
+    <nav className="sticky top-0 z-50 bg-[#050816]/90 backdrop-blur-lg border-b border-white/10">
+
+      <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
+
+        {/* LOGO */}
+        <h1 className="text-3xl font-bold text-blue-500">
           Washim.dev
         </h1>
 
-        <ul className="flex gap-6 text-sm md:text-base">
-          
-          <li>
-            <NavLink to="/" className={navLinkStyles}>
-              Home
-            </NavLink>
-          </li>
+        {/* NAV LINKS */}
+        <div className="flex items-center gap-10 text-lg">
 
-          <li>
-            <NavLink to="/about" className={navLinkStyles}>
-              About
-            </NavLink>
-          </li>
+          <NavLink
+            to="/"
+            className={({ isActive }) =>
+              isActive
+                ? "text-cyan-400 font-semibold"
+                : "text-white hover:text-cyan-400 transition"
+            }
+          >
+            Home
+          </NavLink>
 
-          <li>
-            <NavLink to="/projects" className={navLinkStyles}>
-              Projects
-            </NavLink>
-          </li>
+          <NavLink
+            to="/about"
+            className={({ isActive }) =>
+              isActive
+                ? "text-cyan-400 font-semibold"
+                : "text-white hover:text-cyan-400 transition"
+            }
+          >
+            About
+          </NavLink>
 
-          <li>
-            <NavLink to="/contact" className={navLinkStyles}>
-              Contact
-            </NavLink>
-          </li>
+          <NavLink
+            to="/projects"
+            className={({ isActive }) =>
+              isActive
+                ? "text-cyan-400 font-semibold"
+                : "text-white hover:text-cyan-400 transition"
+            }
+          >
+            Projects
+          </NavLink>
 
-        </ul>
+          <NavLink
+            to="/contact"
+            className={({ isActive }) =>
+              isActive
+                ? "text-cyan-400 font-semibold"
+                : "text-white hover:text-cyan-400 transition"
+            }
+          >
+            Contact
+          </NavLink>
 
-      </nav>
+        </div>
 
-    </header>
+      </div>
+
+    </nav>
   );
 }
 
