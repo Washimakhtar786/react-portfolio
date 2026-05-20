@@ -10,23 +10,48 @@ import NotFound from "./pages/NotFound";
 
 function App() {
   return (
-    <MainLayout>
 
-      <Routes>
+    <div className="w-full overflow-x-hidden">
 
-        <Route path="/" element={<Home />} />
+      <MainLayout>
 
-        <Route path="/about" element={<About />} />
+        <Routes>
 
-        <Route path="/projects" element={<Projects />} />
+          {/* HOME */}
+          <Route
+            path="/"
+            element={<Home />}
+          />
 
-        <Route path="/contact" element={<Contact />} />
+          {/* ABOUT */}
+          <Route
+            path="/about"
+            element={<About />}
+          />
 
-        <Route path="*" element={<NotFound />} />
+          {/* PROJECTS */}
+          <Route
+            path="/projects"
+            element={<Projects />}
+          />
 
-      </Routes>
+          {/* CONTACT */}
+          <Route
+            path="/contact"
+            element={<Contact />}
+          />
 
-    </MainLayout>
+          {/* 404 PAGE */}
+          <Route
+            path="*"
+            element={<NotFound />}
+          />
+
+        </Routes>
+
+      </MainLayout>
+
+    </div>
   );
 }
 
