@@ -10,12 +10,11 @@ const projectsData = [
     tech: ["React", "Tailwind", "Component Architecture"],
 
     image:
-      "https://opengraph.githubassets.com/1/Washimakhtar786/taskmaster-pro",
+      "https://images.unsplash.com/photo-1484480974693-6ca0a78fb36b?q=80&w=1200&auto=format&fit=crop",
 
     github:
       "https://github.com/Washimakhtar786/taskmaster-pro",
 
-    // ADD RENDER LINK HERE
     live:
       "https://taskmaster-pro-gd4d.onrender.com",
   },
@@ -31,12 +30,11 @@ const projectsData = [
     tech: ["React", "UI System", "Tailwind"],
 
     image:
-      "https://opengraph.githubassets.com/1/Washimakhtar786/design-system-kit",
+      "https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop",
 
     github:
       "https://github.com/Washimakhtar786/design-system-kit",
 
-    // ADD RENDER LINK HERE
     live:
       "https://design-system-kit.onrender.com",
   },
@@ -52,12 +50,11 @@ const projectsData = [
     tech: ["React", "Tailwind CSS", "Portfolio"],
 
     image:
-      "https://opengraph.githubassets.com/1/Washimakhtar786/tailwind-portfolio",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
 
     github:
       "https://github.com/Washimakhtar786/tailwind-portfolio",
 
-    // ADD RENDER LINK HERE
     live:
       "https://tailwind-portfolio-qcuy.onrender.com",
   },
@@ -73,12 +70,11 @@ const projectsData = [
     tech: ["React", "Responsive UI", "CSS"],
 
     image:
-      "https://opengraph.githubassets.com/1/Washimakhtar786/mini-blog",
+      "https://images.unsplash.com/photo-1499750310107-5fef28a66643?q=80&w=1200&auto=format&fit=crop",
 
     github:
       "https://github.com/Washimakhtar786/mini-blog",
 
-    // ADD RENDER LINK HERE
     live:
       "https://mini-blog-1x3q.onrender.com",
   },
@@ -94,12 +90,11 @@ const projectsData = [
     tech: ["React", "Dashboard UI", "Tailwind"],
 
     image:
-      "https://opengraph.githubassets.com/1/Washimakhtar786/admin-dashboard",
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1200&auto=format&fit=crop",
 
     github:
       "https://github.com/Washimakhtar786/admin-dashboard",
 
-    // ADD RENDER LINK HERE
     live:
       "https://admin-dashboard-egah.onrender.com",
   },
@@ -115,12 +110,11 @@ const projectsData = [
     tech: ["React", "Frontend UI", "Tailwind"],
 
     image:
-      "https://opengraph.githubassets.com/1/Washimakhtar786/ecommerce-storefront",
+      "https://images.unsplash.com/photo-1523275335684-37898b6baf30?q=80&w=1200&auto=format&fit=crop",
 
     github:
       "https://github.com/Washimakhtar786/ecommerce-storefront",
 
-    // ADD RENDER LINK HERE
     live:
       "https://ecommerce-storefront-hc7w.onrender.com",
   },
@@ -136,12 +130,11 @@ const projectsData = [
     tech: ["React", "API", "JavaScript"],
 
     image:
-      "https://opengraph.githubassets.com/1/Washimakhtar786/WeatherDashBoard",
+      "https://images.unsplash.com/photo-1504608524841-42fe6f032b4b?q=80&w=1200&auto=format&fit=crop",
 
     github:
       "https://github.com/Washimakhtar786/WeatherDashBoard",
 
-    // ADD RENDER LINK HERE
     live:
       "https://weatherdashboard-30lw.onrender.com",
   },
@@ -157,12 +150,11 @@ const projectsData = [
     tech: ["React", "JavaScript", "UI Design"],
 
     image:
-      "https://opengraph.githubassets.com/1/Washimakhtar786/ExpenseTracker",
+      "https://images.unsplash.com/photo-1554224155-6726b3ff858f?q=80&w=1200&auto=format&fit=crop",
 
     github:
       "https://github.com/Washimakhtar786/ExpenseTracker",
 
-    // ADD RENDER LINK HERE
     live:
       "https://expensetracker-epk7.onrender.com",
   },
@@ -178,12 +170,11 @@ const projectsData = [
     tech: ["JavaScript", "Frontend", "Responsive"],
 
     image:
-      "https://opengraph.githubassets.com/1/Washimakhtar786/QuizApp",
+      "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?q=80&w=1200&auto=format&fit=crop",
 
     github:
       "https://github.com/Washimakhtar786/QuizApp",
 
-    // ADD RENDER LINK HERE
     live:
       "https://washimakhtar786.github.io/QuizApp/",
   },
