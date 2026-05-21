@@ -1,67 +1,115 @@
-import { NavLink } from "react-router-dom";
+import { useState } from "react";
+
+import { Link } from "react-router-dom";
+
+import {
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 
 function Navbar() {
+
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
 
-    <nav className="sticky top-0 z-50 bg-[#050816]/90 backdrop-blur-lg border-b border-white/10">
+    <nav className="fixed top-0 left-0 w-full z-50 bg-[#111827]/95 backdrop-blur-lg border-b border-white/10">
 
       <div className="max-w-7xl mx-auto px-6 py-5 flex items-center justify-between">
 
         {/* LOGO */}
-        <h1 className="text-3xl font-bold text-blue-500">
+        <Link
+          to="/"
+          className="text-4xl font-bold text-blue-500"
+        >
           Washim.dev
-        </h1>
+        </Link>
 
-        {/* NAV LINKS */}
-        <div className="flex items-center gap-10 text-lg">
+        {/* DESKTOP MENU */}
+        <div className="hidden md:flex items-center gap-12 text-white text-xl font-medium">
 
-          <NavLink
+          <Link
             to="/"
-            className={({ isActive }) =>
-              isActive
-                ? "text-cyan-400 font-semibold"
-                : "text-white hover:text-cyan-400 transition"
-            }
+            className="hover:text-cyan-400 transition"
           >
             Home
-          </NavLink>
+          </Link>
 
-          <NavLink
+          <Link
             to="/about"
-            className={({ isActive }) =>
-              isActive
-                ? "text-cyan-400 font-semibold"
-                : "text-white hover:text-cyan-400 transition"
-            }
+            className="hover:text-cyan-400 transition"
           >
             About
-          </NavLink>
+          </Link>
 
-          <NavLink
+          <Link
             to="/projects"
-            className={({ isActive }) =>
-              isActive
-                ? "text-cyan-400 font-semibold"
-                : "text-white hover:text-cyan-400 transition"
-            }
+            className="hover:text-cyan-400 transition"
           >
             Projects
-          </NavLink>
+          </Link>
 
-          <NavLink
+          <Link
             to="/contact"
-            className={({ isActive }) =>
-              isActive
-                ? "text-cyan-400 font-semibold"
-                : "text-white hover:text-cyan-400 transition"
-            }
+            className="hover:text-cyan-400 transition"
           >
             Contact
-          </NavLink>
+          </Link>
 
         </div>
 
+        {/* MOBILE MENU BUTTON */}
+        <button
+          onClick={() => setMenuOpen(!menuOpen)}
+          className="md:hidden text-white text-3xl"
+        >
+
+          {menuOpen ? <FaTimes /> : <FaBars />}
+
+        </button>
+
       </div>
+
+      {/* MOBILE MENU */}
+      {menuOpen && (
+
+        <div className="md:hidden bg-[#111827] border-t border-white/10 px-6 py-6 flex flex-col gap-6 text-white text-xl font-medium">
+
+          <Link
+            to="/"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-cyan-400 transition"
+          >
+            Home
+          </Link>
+
+          <Link
+            to="/about"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-cyan-400 transition"
+          >
+            About
+          </Link>
+
+          <Link
+            to="/projects"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-cyan-400 transition"
+          >
+            Projects
+          </Link>
+
+          <Link
+            to="/contact"
+            onClick={() => setMenuOpen(false)}
+            className="hover:text-cyan-400 transition"
+          >
+            Contact
+          </Link>
+
+        </div>
+
+      )}
 
     </nav>
   );

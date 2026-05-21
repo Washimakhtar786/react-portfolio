@@ -19,7 +19,7 @@ function MainLayout({ children }) {
 
         <Navbar />
 
-        <main className="flex-grow container mx-auto px-6 py-12">
+        <main className="pt-24">
           {children}
         </main>
 
