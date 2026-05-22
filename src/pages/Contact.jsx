@@ -27,7 +27,7 @@ function Contact() {
   };
 
   return (
-    <section className="relative overflow-hidden min-h-screen bg-gradient-to-br from-[#F8FAFC] via-[#EFF6FF] to-[#ECFCCB] px-4 md:px-8 py-24">
+    <section className="relative overflow-hidden min-h-screen bg-gradient-to-br from-[#F8FAFC] via-[#EFF6FF] to-[#ECFCCB] px-4 md:px-8 pt-44 pb-24">
 
       {/* LEFT BLUR */}
       <div className="absolute left-[-120px] bottom-[-120px] w-[320px] h-[320px] bg-blue-200/40 rounded-full blur-3xl"></div>
@@ -48,31 +48,39 @@ function Contact() {
       <div className="w-full">
 
         {/* HERO */}
-        <div className="relative z-10 text-center max-w-5xl mx-auto mb-24 pt-10">
+        
 
-          <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold tracking-wide mb-6">
+<div className="relative z-10 text-center max-w-5xl mx-auto mb-24 lg:translate-x-0 mt-28">
 
-            <FaPaperPlane className="text-xs" />
+  {/* CONTACT BADGE */}
+  <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold tracking-wide mb-8">
 
-            CONTACT
+    <FaPaperPlane className="text-xs" />
 
-          </div>
+    CONTACT
 
-          <h1 className="text-6xl md:text-7xl font-bold text-[#0F172A] mb-6 leading-tight">
+  </div>
 
-            Get in Touch
+  {/* HEADING */}
+  <h1 className="text-6xl md:text-7xl font-bold text-[#0F172A] mb-8 leading-tight">
 
-          </h1>
+    Get in Touch
 
-          <p className="text-slate-500 text-xl md:text-2xl leading-9 max-w-3xl mx-auto">
+  </h1>
 
-            Have a project, idea, or opportunity?
-            I’d love to hear from you.
+  {/* SUBTEXT */}
+  <div className="lg:translate-x-16">
 
-          </p>
+    <p className="text-slate-500 text-xl md:text-2xl leading-9 max-w-3xl mx-auto">
 
-        </div>
+      Have a project, idea, or opportunity?
+      I’d love to hear from you.
 
+    </p>
+
+  </div>
+
+</div>
         {/* MAIN CONTAINER */}
         <div className="relative z-10 max-w-7xl mx-auto px-8">
 
