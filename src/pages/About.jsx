@@ -11,10 +11,10 @@ function About() {
 
   return (
 
-    <section className="min-h-screen bg-[#151313] text-white px-8 md:px-20 py-32 overflow-hidden">
+    <section className="min-h-[110vh] bg-[#151313] text-white px-8 md:px-20 pt-[150px] pb-32 overflow-hidden">
 
       {/* TOP SECTION */}
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center relative top-24">
 
         {/* LEFT */}
         <div className="translate-x-12">
@@ -35,9 +35,9 @@ function About() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="flex justify-center lg:justify-end">
+        <div className="flex justify-center lg:justify-end pt-10">
 
-          <div className="w-[420px] h-[520px] rounded-[35px] overflow-hidden bg-[#B9C8E3] shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
+          <div className="w-[420px] h-[380px] rounded-[35px] overflow-hidden bg-[#B9C8E3] shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
 
             <img
               src={profileImage}
@@ -52,7 +52,7 @@ function About() {
       </div>
 
       {/* ABOUT SECTION */}
-      <div className="max-w-7xl mx-auto mt-20 translate-x-10">
+      <div className="max-w-7xl mx-auto mt-20 translate-x-10 relative top-19">
 
         {/* TITLE */}
         <div className="flex items-center gap-8 mb-10">
@@ -160,7 +160,7 @@ function About() {
         href="https://github.com/Washimakhtar786"
         target="_blank"
         rel="noreferrer"
-        className="fixed top-6 right-6 text-white text-4xl hover:scale-110 transition duration-300 z-50"
+        className="fixed bottom-6 right-6 text-white text-4xl hover:scale-110 transition duration-300 z-40"
       >
 
         <FaGithub />
