@@ -13,7 +13,10 @@ function Home() {
 
   return (
 
-    <section className="min-h-screen bg-black text-white overflow-hidden relative">
+    <section className="bg-black text-white relative">
+
+      {/* MOBILE NAVBAR SPACER */}
+      <div className="h-[90px] md:h-0"></div>
 
       {/* BACKGROUND EFFECT */}
       <div className="absolute inset-0 opacity-20">
@@ -23,20 +26,20 @@ function Home() {
       </div>
 
       {/* MAIN CONTAINER */}
-      <div className="relative z-10 max-w-7xl mx-auto px-6 md:px-10">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 md:px-10">
 
         {/* HERO SECTION */}
-        <div className="grid lg:grid-cols-[0.85fr_1.15fr] items-center min-h-screen gap-10 pt-28">
+        <div className="grid lg:grid-cols-[0.85fr_1.15fr] items-start lg:items-center min-h-screen gap-16 pt-10 md:pt-28 pb-14">
 
           {/* LEFT SIDE */}
           <div className="flex justify-center lg:justify-start">
 
-            <div className="space-y-10 ml-12 md:ml-20 lg:ml-28">
+            <div className="space-y-8 w-full max-w-[520px] ml-0 md:ml-20 lg:ml-28">
 
               {/* SMALL TITLE */}
-              <div className="translate-x-10">
+              <div className="md:translate-x-10">
 
-                <h2 className="text-5xl md:text-6xl font-black tracking-tight">
+                <h2 className="text-4xl sm:text-5xl md:text-6xl font-black tracking-tight">
 
                   Washim
                   <span className="text-gray-400">®</span>
@@ -46,9 +49,9 @@ function Home() {
               </div>
 
               {/* MAIN HEADING */}
-              <div className="translate-x-10">
+              <div className="md:translate-x-10">
 
-                <h1 className="text-6xl md:text-8xl font-black leading-[0.92] tracking-tight">
+                <h1 className="text-5xl sm:text-6xl md:text-8xl font-black leading-[0.92] tracking-tight">
 
                   Portfolio
                   <br />
@@ -59,11 +62,11 @@ function Home() {
               </div>
 
               {/* FEATURES */}
-              <div className="space-y-5 pt-2 translate-x-10">
+              <div className="space-y-4 pt-2 md:translate-x-10">
 
-                <div className="flex items-center gap-4 text-gray-300 text-xl">
+                <div className="flex items-center gap-4 text-gray-300 text-base sm:text-lg md:text-xl">
 
-                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
 
                     <FaCheck className="text-sm" />
 
@@ -73,9 +76,9 @@ function Home() {
 
                 </div>
 
-                <div className="flex items-center gap-4 text-gray-300 text-xl">
+                <div className="flex items-center gap-4 text-gray-300 text-base sm:text-lg md:text-xl">
 
-                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
 
                     <FaCheck className="text-sm" />
 
@@ -85,9 +88,9 @@ function Home() {
 
                 </div>
 
-                <div className="flex items-center gap-4 text-gray-300 text-xl">
+                <div className="flex items-center gap-4 text-gray-300 text-base sm:text-lg md:text-xl">
 
-                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
 
                     <FaCheck className="text-sm" />
 
@@ -97,9 +100,9 @@ function Home() {
 
                 </div>
 
-                <div className="flex items-center gap-4 text-gray-300 text-xl">
+                <div className="flex items-center gap-4 text-gray-300 text-base sm:text-lg md:text-xl">
 
-                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center flex-shrink-0">
 
                     <FaCheck className="text-sm" />
 
@@ -112,16 +115,16 @@ function Home() {
               </div>
 
               {/* SOCIAL ICONS */}
-              <div className="flex items-center gap-5 pt-6 translate-x-10">
+              <div className="flex flex-wrap items-center gap-4 pt-6 md:translate-x-10">
 
                 <a
                   href="https://github.com/Washimakhtar786"
                   target="_blank"
                   rel="noreferrer"
-                  className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+                  className="w-14 h-14 md:w-16 md:h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
                 >
 
-                  <FaGithub size={24} />
+                  <FaGithub size={22} />
 
                 </a>
 
@@ -129,28 +132,28 @@ function Home() {
                   href="https://www.linkedin.com/in/washim-akhter-563721361"
                   target="_blank"
                   rel="noreferrer"
-                  className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+                  className="w-14 h-14 md:w-16 md:h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
                 >
 
-                  <FaLinkedin size={24} />
+                  <FaLinkedin size={22} />
 
                 </a>
 
                 <a
                   href="#"
-                  className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+                  className="w-14 h-14 md:w-16 md:h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
                 >
 
-                  <FaTwitter size={24} />
+                  <FaTwitter size={22} />
 
                 </a>
 
                 <a
                   href="mailto:washim@example.com"
-                  className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+                  className="w-14 h-14 md:w-16 md:h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
                 >
 
-                  <MdEmail size={24} />
+                  <MdEmail size={22} />
 
                 </a>
 
@@ -161,21 +164,21 @@ function Home() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="relative flex justify-center items-center">
+          <div className="relative flex justify-center items-center mt-4 lg:mt-0">
 
             {/* GLOW */}
-            <div className="absolute w-[420px] h-[420px] bg-white/5 rounded-full blur-3xl"></div>
+            <div className="absolute w-[260px] h-[260px] sm:w-[340px] sm:h-[340px] md:w-[420px] md:h-[420px] bg-white/5 rounded-full blur-3xl"></div>
 
             {/* LAPTOP CONTAINER */}
-            <div className="relative rotate-[-9deg] hover:rotate-[-5deg] transition duration-500">
+            <div className="relative lg:rotate-[-9deg] lg:hover:rotate-[-5deg] transition duration-500 w-full flex justify-center">
 
               {/* SCREEN */}
-              <div className="bg-[#ECECEC] rounded-[28px] border-[9px] border-[#2A2A2A] shadow-[0_30px_90px_rgba(255,255,255,0.08)] overflow-hidden w-[560px] md:w-[620px] max-w-full">
+              <div className="bg-[#ECECEC] rounded-[20px] md:rounded-[28px] border-[7px] md:border-[9px] border-[#2A2A2A] shadow-[0_30px_90px_rgba(255,255,255,0.08)] overflow-hidden w-full max-w-[620px]">
 
                 {/* TOP MENU */}
-                <div className="flex justify-center py-4 bg-[#F7F7F7] border-b border-gray-300">
+                <div className="flex justify-center py-3 md:py-4 bg-[#F7F7F7] border-b border-gray-300">
 
-                  <div className="bg-black text-white px-7 py-2 rounded-full text-sm font-semibold flex gap-5">
+                  <div className="bg-black text-white px-4 sm:px-6 py-2 rounded-full text-[10px] sm:text-xs md:text-sm font-semibold flex gap-3 sm:gap-5">
 
                     <span>Home</span>
                     <span>Projects</span>
@@ -187,10 +190,10 @@ function Home() {
                 </div>
 
                 {/* SCREEN CONTENT */}
-                <div className="relative p-8 md:p-12 text-black min-h-[420px]">
+                <div className="relative p-5 sm:p-7 md:p-12 text-black min-h-[360px] md:min-h-[420px]">
 
                   {/* MAIN TEXT */}
-                  <h1 className="text-5xl md:text-7xl font-black leading-[0.88] tracking-tight">
+                  <h1 className="text-4xl sm:text-5xl md:text-7xl font-black leading-[0.88] tracking-tight">
 
                     Websites&
                     <br />
@@ -199,14 +202,14 @@ function Home() {
                   </h1>
 
                   {/* BUTTON */}
-                  <button className="absolute top-10 right-8 border border-gray-300 px-5 py-2 rounded-full text-sm font-semibold hover:bg-black hover:text-white transition">
+                  <button className="mt-6 md:absolute md:top-10 md:right-8 border border-gray-300 px-4 md:px-5 py-2 rounded-full text-xs md:text-sm font-semibold hover:bg-black hover:text-white transition">
 
                     SCROLL DOWN ↓
 
                   </button>
 
-                  {/* LEFT BOTTOM */}
-                  <div className="absolute bottom-8 left-8">
+                  {/* MOBILE + DESKTOP CONTENT */}
+                  <div className="mt-8 md:mt-0 md:absolute md:bottom-8 md:left-8">
 
                     <p className="text-sm font-bold mb-1">
 
@@ -222,8 +225,7 @@ function Home() {
 
                   </div>
 
-                  {/* RIGHT TEXT */}
-                  <div className="absolute bottom-8 right-8 max-w-[220px] text-gray-500 text-sm leading-7">
+                  <div className="mt-6 md:mt-0 md:absolute md:bottom-8 md:right-8 max-w-[220px] text-gray-500 text-sm leading-6 md:leading-7">
 
                     Hello, I’m washim, an online product
                     designer focusing on brand identity,
@@ -234,9 +236,6 @@ function Home() {
                 </div>
 
               </div>
-
-              {/* LAPTOP BASE */}
-              <div className="w-[620px] md:w-[680px] max-w-full h-7 bg-[#BDBDBD] rounded-b-[30px] blur-[1px] mx-auto"></div>
 
             </div>
 
