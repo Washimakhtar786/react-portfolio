@@ -1,123 +1,171 @@
 import profileImage from "../assets/my pic.jpeg";
 
+import {
+  FaGithub,
+  FaReact,
+  FaPython,
+  FaBrain,
+} from "react-icons/fa";
+
 function About() {
+
   return (
-    <section className="min-h-[85vh] flex items-center py-10">
 
-      <div className="grid lg:grid-cols-2 gap-20 items-center w-full">
+    <section className="min-h-screen bg-[#151313] text-white px-8 md:px-20 py-32 overflow-hidden">
 
-        {/* LEFT IMAGE SECTION */}
-        <div className="relative flex justify-center">
+      {/* TOP SECTION */}
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center">
 
-          {/* Glow Effect */}
-          <div className="absolute w-80 h-80 bg-cyan-400/20 blur-3xl rounded-full"></div>
+        {/* LEFT */}
+        <div className="translate-x-12">
 
-          {/* Image Card */}
-          <div className="relative bg-white/70 backdrop-blur-xl border border-slate-200 p-5 rounded-[35px] shadow-[0_20px_80px_rgba(0,0,0,0.15)]">
+          <p className="text-gray-300 text-2xl mb-7">
+
+            Hello, I'm Washim,
+
+          </p>
+
+          <h1 className="text-6xl md:text-7xl font-black leading-[1.08] text-[#B9C8E3] mb-8">
+
+            Frontend <br />
+            Developer
+
+          </h1>
+
+        </div>
+
+        {/* RIGHT IMAGE */}
+        <div className="flex justify-center lg:justify-end">
+
+          <div className="w-[420px] h-[520px] rounded-[35px] overflow-hidden bg-[#B9C8E3] shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
 
             <img
               src={profileImage}
               alt="Washim Akhtar"
-              className="w-[320px] md:w-[420px] h-[520px] object-cover rounded-[25px]"
+              className="w-full h-full object-cover"
             />
 
           </div>
 
         </div>
 
-        {/* RIGHT CONTENT */}
-        <div className="max-w-2xl">
+      </div>
 
-          {/* Small Heading */}
-          <p className="text-cyan-500 font-semibold uppercase tracking-widest mb-4">
-            About Me
-          </p>
+      {/* ABOUT SECTION */}
+      <div className="max-w-7xl mx-auto mt-20 translate-x-10">
 
-          {/* Main Heading */}
-          <h2 className="text-5xl md:text-6xl font-bold text-slate-900 leading-tight mb-8">
-            Passionate Frontend Developer
+        {/* TITLE */}
+        <div className="flex items-center gap-8 mb-10">
+
+          <h2 className="text-5xl font-black text-[#B9C8E3]">
+
+            about
+
           </h2>
 
-          {/* Description */}
-          <p className="text-slate-700 text-lg leading-9 mb-6">
-            I am a frontend developer passionate about building
-            modern, responsive, and user-friendly web applications
-            using React and modern frontend technologies.
-          </p>
+          <div className="flex-1 h-[2px] bg-[#6E7688]"></div>
 
-          <p className="text-slate-700 text-lg leading-9 mb-10">
-            I have experience with HTML, CSS, JavaScript,
-            Advanced JavaScript, React, GitHub, deployment,
-            and responsive UI development.
-          </p>
+        </div>
 
-          {/* Skills */}
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-12">
+        {/* DESCRIPTION */}
+        <p className="text-gray-300 text-[22px] leading-[2.6] max-w-6xl mt-6">
 
-            <div className="bg-white/70 border border-slate-200 backdrop-blur-lg rounded-2xl p-5 shadow-md">
+          I’m a passionate Frontend Developer focused on building
+          responsive, modern and premium web experiences using
+          React, Tailwind CSS and JavaScript. I enjoy creating
+          clean UI designs, smooth user experiences and scalable
+          frontend architectures while continuously learning new
+          technologies and improving my development skills.
 
-              <h3 className="text-cyan-500 text-xl font-semibold mb-2">
-                Frontend
+        </p>
+
+        {/* SKILLS */}
+        <div className="grid md:grid-cols-3 gap-16 mt-20">
+
+          {/* FRONTEND */}
+          <div>
+
+            <div className="flex items-center gap-4 mb-5">
+
+              <FaReact className="text-5xl text-cyan-400" />
+
+              <h3 className="text-4xl font-bold">
+
+                Front-End
+
               </h3>
-
-              <p className="text-slate-700">
-                React, JavaScript, Tailwind CSS
-              </p>
 
             </div>
 
-            <div className="bg-white/70 border border-slate-200 backdrop-blur-lg rounded-2xl p-5 shadow-md">
+            <p className="text-gray-400 text-lg border-b border-gray-500 inline-block pb-2">
 
-              <h3 className="text-cyan-500 text-xl font-semibold mb-2">
-                Tools
-              </h3>
+              80+ Hours Experience
 
-              <p className="text-slate-700">
-                GitHub, Render, VS Code
-              </p>
-
-            </div>
+            </p>
 
           </div>
 
-          {/* Stats */}
-          <div className="flex flex-wrap gap-10">
+          {/* PYTHON */}
+          <div>
 
-            <div>
-              <h3 className="text-4xl font-bold text-cyan-500">
-                10+
+            <div className="flex items-center gap-4 mb-5">
+
+              <FaPython className="text-5xl text-yellow-400" />
+
+              <h3 className="text-4xl font-bold">
+
+                Python
+
               </h3>
 
-              <p className="text-slate-600 mt-2">
-                Projects Built
-              </p>
             </div>
 
-            <div>
-              <h3 className="text-4xl font-bold text-cyan-500">
-                1+
+            <p className="text-gray-400 text-lg border-b border-gray-500 inline-block pb-2">
+
+              4 Years Experience
+
+            </p>
+
+          </div>
+
+          {/* MACHINE LEARNING */}
+          <div>
+
+            <div className="flex items-center gap-4 mb-5">
+
+              <FaBrain className="text-5xl text-pink-400" />
+
+              <h3 className="text-4xl font-bold">
+
+                Machine Learning
+
               </h3>
 
-              <p className="text-slate-600 mt-2">
-                Years Learning
-              </p>
             </div>
 
-            <div>
-              <h3 className="text-4xl font-bold text-cyan-500">
-                100%
-              </h3>
+            <p className="text-gray-400 text-lg border-b border-gray-500 inline-block pb-2">
 
-              <p className="text-slate-600 mt-2">
-                Passionate
-              </p>
-            </div>
+              120+ Hours Experience
+
+            </p>
 
           </div>
 
         </div>
 
       </div>
+
+      {/* GITHUB ICON */}
+      <a
+        href="https://github.com/Washimakhtar786"
+        target="_blank"
+        rel="noreferrer"
+        className="fixed top-6 right-6 text-white text-4xl hover:scale-110 transition duration-300 z-50"
+      >
+
+        <FaGithub />
+
+      </a>
 
     </section>
   );

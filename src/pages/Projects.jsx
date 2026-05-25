@@ -68,18 +68,18 @@ function Projects() {
               </h3>
 
               {/* DESCRIPTION */}
-              <p className="text-gray-400 leading-8 mb-8 min-h-[120px]">
+              <p className="text-gray-400 leading-8 mb-5 min-h-[90px]">
                 {project.description}
               </p>
 
-              {/* TECH */}
-              <div className="flex flex-wrap gap-3 mb-6">
+              {/* TECH TAGS */}
+              <div className="flex flex-wrap gap-4 mb-4 mt-0">
 
                 {project.tech.map((tech, i) => (
 
                   <span
                     key={i}
-                    className="bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 px-4 py-2 rounded-full text-sm"
+                    className="bg-cyan-500/10 border border-cyan-400/20 text-cyan-300 px-5 py-2 rounded-full text-[15px] font-medium"
                   >
                     {tech}
                   </span>
@@ -89,14 +89,14 @@ function Projects() {
               </div>
 
               {/* BUTTONS */}
-              <div className="flex items-center gap-4 flex-wrap mt-4">
+              <div className="flex items-center gap-4 flex-wrap mt-1">
 
                 {/* GITHUB */}
                 <a
                   href={project.github}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-5 py-3 rounded-xl transition duration-300"
+                  className="flex items-center gap-2 bg-cyan-500 hover:bg-cyan-400 text-black font-semibold px-5 py-2.5 rounded-xl transition duration-300 text-[16px]"
                 >
                   <FaGithub />
                   GitHub
@@ -107,7 +107,7 @@ function Projects() {
                   href={project.live}
                   target="_blank"
                   rel="noreferrer"
-                  className="flex items-center gap-2 border border-white/10 hover:bg-white/10 text-white px-5 py-3 rounded-xl transition duration-300"
+                  className="flex items-center gap-2 border border-white/10 hover:bg-white/10 text-white px-5 py-2.5 rounded-xl transition duration-300 text-[16px]"
                 >
                   <FaExternalLinkAlt />
                   Live Demo
