@@ -29,138 +29,136 @@ function Home() {
         <div className="grid lg:grid-cols-[0.85fr_1.15fr] items-center min-h-screen gap-10 pt-28">
 
           {/* LEFT SIDE */}
-          
-        
-<div className="flex justify-center lg:justify-start">
+          <div className="flex justify-center lg:justify-start">
 
-  <div className="space-y-10 ml-12 md:ml-20 lg:ml-28">
+            <div className="space-y-10 ml-12 md:ml-20 lg:ml-28">
 
-    {/* SMALL TITLE */}
-    <div>
+              {/* SMALL TITLE */}
+              <div className="translate-x-10">
 
-      <h2 className="text-5xl md:text-6xl font-black tracking-tight">
+                <h2 className="text-5xl md:text-6xl font-black tracking-tight">
 
-        Washim
-        <span className="text-gray-400">®</span>
+                  Washim
+                  <span className="text-gray-400">®</span>
 
-      </h2>
+                </h2>
 
-    </div>
+              </div>
 
-    {/* MAIN HEADING */}
-    <div>
+              {/* MAIN HEADING */}
+              <div className="translate-x-10">
 
-      <h1 className="text-6xl md:text-8xl font-black leading-[0.92] tracking-tight">
+                <h1 className="text-6xl md:text-8xl font-black leading-[0.92] tracking-tight">
 
-        Portfolio
-        <br />
-        Website
+                  Portfolio
+                  <br />
+                  Website
 
-      </h1>
+                </h1>
 
-    </div>
+              </div>
 
-    {/* FEATURES */}
-    <div className="space-y-5 pt-2">
+              {/* FEATURES */}
+              <div className="space-y-5 pt-2 translate-x-10">
 
-      <div className="flex items-center gap-4 text-gray-300 text-xl">
+                <div className="flex items-center gap-4 text-gray-300 text-xl">
 
-        <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
 
-          <FaCheck className="text-sm" />
+                    <FaCheck className="text-sm" />
 
-        </div>
+                  </div>
 
-        <p>Desktop, Tablet & Mobile</p>
+                  <p>Desktop, Tablet & Mobile</p>
 
-      </div>
+                </div>
 
-      <div className="flex items-center gap-4 text-gray-300 text-xl">
+                <div className="flex items-center gap-4 text-gray-300 text-xl">
 
-        <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
 
-          <FaCheck className="text-sm" />
+                    <FaCheck className="text-sm" />
 
-        </div>
+                  </div>
 
-        <p>Light & Dark Mode</p>
+                  <p>Light & Dark Mode</p>
 
-      </div>
+                </div>
 
-      <div className="flex items-center gap-4 text-gray-300 text-xl">
+                <div className="flex items-center gap-4 text-gray-300 text-xl">
 
-        <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
 
-          <FaCheck className="text-sm" />
+                    <FaCheck className="text-sm" />
 
-        </div>
+                  </div>
 
-        <p>Clean and Modern Design</p>
+                  <p>Clean and Modern Design</p>
 
-      </div>
+                </div>
 
-      <div className="flex items-center gap-4 text-gray-300 text-xl">
+                <div className="flex items-center gap-4 text-gray-300 text-xl">
 
-        <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
+                  <div className="w-9 h-9 rounded-full bg-white/10 flex items-center justify-center">
 
-          <FaCheck className="text-sm" />
+                    <FaCheck className="text-sm" />
 
-        </div>
+                  </div>
 
-        <p>Modern React Architecture</p>
+                  <p>Modern React Architecture</p>
 
-      </div>
+                </div>
 
-    </div>
+              </div>
 
-    {/* SOCIAL ICONS */}
-    <div className="flex items-center gap-5 pt-6">
+              {/* SOCIAL ICONS */}
+              <div className="flex items-center gap-5 pt-6 translate-x-10">
 
-      <a
-        href="https://github.com/Washimakhtar786"
-        target="_blank"
-        rel="noreferrer"
-        className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
-      >
+                <a
+                  href="https://github.com/Washimakhtar786"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+                >
 
-        <FaGithub size={24} />
+                  <FaGithub size={24} />
 
-      </a>
+                </a>
 
-      <a
-        href="https://www.linkedin.com/in/washim-akhter-563721361"
-        target="_blank"
-        rel="noreferrer"
-        className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
-      >
+                <a
+                  href="https://www.linkedin.com/in/washim-akhter-563721361"
+                  target="_blank"
+                  rel="noreferrer"
+                  className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+                >
 
-        <FaLinkedin size={24} />
+                  <FaLinkedin size={24} />
 
-      </a>
+                </a>
 
-      <a
-        href="#"
-        className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
-      >
+                <a
+                  href="#"
+                  className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+                >
 
-        <FaTwitter size={24} />
+                  <FaTwitter size={24} />
 
-      </a>
+                </a>
 
-      <a
-        href="mailto:washim@example.com"
-        className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
-      >
+                <a
+                  href="mailto:washim@example.com"
+                  className="w-16 h-16 rounded-full border border-white/20 bg-white/5 backdrop-blur-md flex items-center justify-center hover:bg-white hover:text-black transition duration-300"
+                >
 
-        <MdEmail size={24} />
+                  <MdEmail size={24} />
 
-      </a>
+                </a>
 
-    </div>
+              </div>
 
-  </div>
+            </div>
 
-</div>
+          </div>
 
           {/* RIGHT SIDE */}
           <div className="relative flex justify-center items-center">
