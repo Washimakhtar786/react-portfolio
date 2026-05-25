@@ -11,21 +11,24 @@ function About() {
 
   return (
 
-    <section className="min-h-[110vh] bg-[#151313] text-white px-8 md:px-20 pt-[150px] pb-32 overflow-hidden">
+    <section className="min-h-[110vh] bg-[#151313] text-white px-4 sm:px-8 md:px-20 pt-[120px] md:pt-[150px] pb-32 overflow-hidden">
+
+      {/* MOBILE NAVBAR SPACER */}
+      <div className="h-[70px] sm:h-[90px] md:hidden"></div>
 
       {/* TOP SECTION */}
-      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-24 items-center relative top-24">
+      <div className="max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 lg:gap-24 items-center md:relative md:top-24">
 
         {/* LEFT */}
-        <div className="translate-x-12">
+        <div className="translate-x-0 md:translate-x-12 pt-16 sm:pt-20 md:pt-0">
 
-          <p className="text-gray-300 text-2xl mb-7">
+          <p className="text-gray-300 text-xl sm:text-2xl mb-5 md:mb-7">
 
             Hello, I'm Washim,
 
           </p>
 
-          <h1 className="text-6xl md:text-7xl font-black leading-[1.08] text-[#B9C8E3] mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-black leading-[1.02] md:leading-[1.08] text-[#B9C8E3] mb-8 break-words">
 
             Frontend <br />
             Developer
@@ -35,9 +38,9 @@ function About() {
         </div>
 
         {/* RIGHT IMAGE */}
-        <div className="flex justify-center lg:justify-end pt-10">
+        <div className="flex justify-center lg:justify-end pt-6 md:pt-10">
 
-          <div className="w-[420px] h-[380px] rounded-[35px] overflow-hidden bg-[#B9C8E3] shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
+          <div className="w-full max-w-[420px] h-[300px] sm:h-[340px] md:h-[380px] rounded-[28px] md:rounded-[35px] overflow-hidden bg-[#B9C8E3] shadow-[0_25px_80px_rgba(0,0,0,0.45)]">
 
             <img
               src={profileImage}
@@ -52,12 +55,12 @@ function About() {
       </div>
 
       {/* ABOUT SECTION */}
-      <div className="max-w-7xl mx-auto mt-20 translate-x-10 relative top-19">
+      <div className="max-w-7xl mx-auto mt-16 md:mt-20 translate-x-0 md:translate-x-10 md:relative md:top-19">
 
         {/* TITLE */}
-        <div className="flex items-center gap-8 mb-10">
+        <div className="flex items-center gap-4 md:gap-8 mb-8 md:mb-10">
 
-          <h2 className="text-5xl font-black text-[#B9C8E3]">
+          <h2 className="text-4xl sm:text-5xl font-black text-[#B9C8E3]">
 
             about
 
@@ -68,7 +71,7 @@ function About() {
         </div>
 
         {/* DESCRIPTION */}
-        <p className="text-gray-300 text-[22px] leading-[2.6] max-w-6xl mt-6">
+        <p className="text-gray-300 text-lg sm:text-[20px] md:text-[22px] leading-[2] md:leading-[2.6] max-w-6xl mt-4 md:mt-6 break-words">
 
           I’m a passionate Frontend Developer focused on building
           responsive, modern and premium web experiences using
@@ -80,16 +83,16 @@ function About() {
         </p>
 
         {/* SKILLS */}
-        <div className="grid md:grid-cols-3 gap-16 mt-20">
+        <div className="grid md:grid-cols-3 gap-14 md:gap-16 mt-16 md:mt-20">
 
           {/* FRONTEND */}
           <div>
 
             <div className="flex items-center gap-4 mb-5">
 
-              <FaReact className="text-5xl text-cyan-400" />
+              <FaReact className="text-4xl md:text-5xl text-cyan-400 flex-shrink-0" />
 
-              <h3 className="text-4xl font-bold">
+              <h3 className="text-3xl md:text-4xl font-bold">
 
                 Front-End
 
@@ -97,7 +100,7 @@ function About() {
 
             </div>
 
-            <p className="text-gray-400 text-lg border-b border-gray-500 inline-block pb-2">
+            <p className="text-gray-400 text-base md:text-lg border-b border-gray-500 inline-block pb-2">
 
               80+ Hours Experience
 
@@ -110,9 +113,9 @@ function About() {
 
             <div className="flex items-center gap-4 mb-5">
 
-              <FaPython className="text-5xl text-yellow-400" />
+              <FaPython className="text-4xl md:text-5xl text-yellow-400 flex-shrink-0" />
 
-              <h3 className="text-4xl font-bold">
+              <h3 className="text-3xl md:text-4xl font-bold">
 
                 Python
 
@@ -120,7 +123,7 @@ function About() {
 
             </div>
 
-            <p className="text-gray-400 text-lg border-b border-gray-500 inline-block pb-2">
+            <p className="text-gray-400 text-base md:text-lg border-b border-gray-500 inline-block pb-2">
 
               4 Years Experience
 
@@ -133,9 +136,9 @@ function About() {
 
             <div className="flex items-center gap-4 mb-5">
 
-              <FaBrain className="text-5xl text-pink-400" />
+              <FaBrain className="text-4xl md:text-5xl text-pink-400 flex-shrink-0" />
 
-              <h3 className="text-4xl font-bold">
+              <h3 className="text-3xl md:text-4xl font-bold break-words">
 
                 Machine Learning
 
@@ -143,7 +146,7 @@ function About() {
 
             </div>
 
-            <p className="text-gray-400 text-lg border-b border-gray-500 inline-block pb-2">
+            <p className="text-gray-400 text-base md:text-lg border-b border-gray-500 inline-block pb-2">
 
               120+ Hours Experience
 
@@ -160,7 +163,7 @@ function About() {
         href="https://github.com/Washimakhtar786"
         target="_blank"
         rel="noreferrer"
-        className="fixed bottom-6 right-6 text-white text-4xl hover:scale-110 transition duration-300 z-40"
+        className="fixed bottom-6 right-6 text-white text-3xl md:text-4xl hover:scale-110 transition duration-300 z-40"
       >
 
         <FaGithub />
