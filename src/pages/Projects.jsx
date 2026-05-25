@@ -9,29 +9,13 @@ function Projects() {
 
   return (
 
-    <section className="min-h-screen w-screen bg-[#050816] py-24 overflow-x-hidden">
+    <section className="min-h-screen w-screen bg-[#050816] overflow-x-hidden">
 
-      {/* HEADER */}
-      <div className="text-center mb-20 px-6">
-
-        <p className="text-cyan-400 uppercase tracking-[6px] font-semibold mb-4">
-          Portfolio
-        </p>
-
-        <h2 className="text-5xl md:text-7xl font-bold text-white mb-8">
-          Featured Projects
-        </h2>
-
-        <p className="text-gray-400 text-lg max-w-3xl mx-auto leading-9">
-          A collection of projects showcasing modern frontend
-          development, responsive UI engineering,
-          React architecture, and scalable component design.
-        </p>
-
-      </div>
+      {/* TOP SPACING FOR FIXED NAVBAR */}
+      <div className="h-[115px]"></div>
 
       {/* PROJECT GRID */}
-      <div className="w-full max-w-[1600px] mx-auto px-6 grid md:grid-cols-2 xl:grid-cols-3 gap-10">
+      <div className="w-full max-w-[1600px] mx-auto px-6 grid md:grid-cols-2 xl:grid-cols-3 gap-10 pb-20">
 
         {projectsData.map((project, index) => (
 
@@ -73,7 +57,7 @@ function Projects() {
               </p>
 
               {/* TECH TAGS */}
-              <div className="flex flex-wrap gap-4 mb-4 mt-0">
+              <div className="flex flex-wrap gap-4 mb-4">
 
                 {project.tech.map((tech, i) => (
 
@@ -89,7 +73,7 @@ function Projects() {
               </div>
 
               {/* BUTTONS */}
-              <div className="flex items-center gap-4 flex-wrap mt-1">
+              <div className="flex items-center gap-4 flex-wrap mt-2">
 
                 {/* GITHUB */}
                 <a
