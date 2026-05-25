@@ -17,29 +17,29 @@ function Navbar() {
     <nav className="fixed top-0 left-0 w-full z-50 bg-[#0B1120]/95 backdrop-blur-xl border-b border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.35)]">
 
       {/* MAIN NAVBAR */}
-      <div className="max-w-7xl mx-auto px-8 h-[78px] flex items-center justify-between">
+      <div className="max-w-7xl mx-auto px-6 h-[64px] flex items-center justify-between">
 
         {/* LOGO */}
         <Link
           to="/"
-          className="flex items-center gap-3"
+          className="flex items-center gap-2"
         >
 
           <img
             src={profileImage}
             alt="Washim Akhtar"
-            className="w-12 h-12 rounded-full object-cover border-2 border-blue-500 shadow-lg"
+            className="w-10 h-10 rounded-full object-cover border border-blue-500 shadow-lg"
           />
 
           <div className="flex flex-col leading-none">
 
-            <span className="text-[32px] font-black tracking-tight text-blue-500">
+            <span className="text-[24px] font-black tracking-tight text-blue-500">
 
               Washim
 
             </span>
 
-            <span className="text-[11px] text-gray-400 font-medium mt-1">
+            <span className="text-[9px] text-gray-400 font-medium mt-1">
 
               Frontend Developer
 
@@ -50,7 +50,7 @@ function Navbar() {
         </Link>
 
         {/* DESKTOP MENU */}
-        <div className="hidden md:flex items-center gap-12 text-white text-[18px] font-semibold">
+        <div className="hidden md:flex items-center gap-10 text-white text-[15px] font-semibold">
 
           <Link
             to="/"
@@ -85,7 +85,7 @@ function Navbar() {
         {/* MOBILE MENU BUTTON */}
         <button
           onClick={() => setMenuOpen(!menuOpen)}
-          className="md:hidden text-white text-3xl"
+          className="md:hidden text-white text-2xl"
         >
 
           {menuOpen ? <FaTimes /> : <FaBars />}
@@ -97,7 +97,7 @@ function Navbar() {
       {/* MOBILE MENU */}
       {menuOpen && (
 
-        <div className="md:hidden bg-[#0B1120] border-t border-white/10 px-8 py-6 flex flex-col gap-6 text-white text-xl font-semibold">
+        <div className="md:hidden bg-[#0B1120] border-t border-white/10 px-6 py-5 flex flex-col gap-5 text-white text-lg font-semibold">
 
           <Link
             to="/"

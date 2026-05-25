@@ -31,7 +31,7 @@ function Contact() {
 
   return (
 
-    <section className="relative overflow-hidden min-h-screen bg-gradient-to-br from-[#F8FAFC] via-[#EFF6FF] to-[#ECFCCB] pt-60 pb-24 px-8">
+    <section className="relative overflow-hidden min-h-screen bg-gradient-to-br from-[#F8FAFC] via-[#EFF6FF] to-[#ECFCCB] pt-[120px] pb-24 px-8">
 
       {/* BACKGROUND BLURS */}
       <div className="absolute -left-32 bottom-0 w-[320px] h-[320px] bg-blue-200/40 rounded-full blur-3xl"></div>
@@ -39,35 +39,12 @@ function Contact() {
       <div className="absolute -right-32 top-40 w-[320px] h-[320px] bg-lime-200/40 rounded-full blur-3xl"></div>
 
       {/* HERO SECTION */}
-      <div className="relative z-10 text-center mb-14">
-
-        <div className="inline-flex items-center gap-2 px-5 py-2 rounded-full bg-blue-100 text-blue-600 font-semibold mb-6">
-
-          <FaPaperPlane className="text-sm" />
-
-          CONTACT
-
-        </div>
-
-        <h1 className="text-5xl md:text-6xl font-black text-[#0F172A] mb-6">
-
-          Get in Touch
-
-        </h1>
-
-        <p className="text-slate-500 text-2xl">
-
-          Have a project, idea, or opportunity?
-          I’d love to hear from you.
-
-        </p>
-
-      </div>
+      
 
       {/* MAIN CONTAINER */}
-      <div className="relative z-10 max-w-[1220px] mx-auto translate-x-26">
+      <div className="relative z-10 max-w-[1220px] mx-auto lg:translate-x-26 relative top-18">
 
-        <div className="grid lg:grid-cols-2 rounded-[38px] overflow-hidden bg-white shadow-[0_25px_90px_rgba(0,0,0,0.12)]">
+        <div className="grid lg:grid-cols-2 rounded-[38px] overflow-hidden bg-white shadow-[0_25px_90px_rgba(0,0,0,0.12)] mb-40">
 
           {/* LEFT FORM */}
           <div className="bg-white px-14 py-16 flex items-center justify-center">
@@ -209,7 +186,7 @@ function Contact() {
           </div>
 
           {/* RIGHT SIDE */}
-          <div className="relative min-h-[760px]">
+          <div className="relative min-h-[630px]">
 
             {/* IMAGE */}
             <img
